@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+.maintenance{
+    margin-top: 110px;
+}
+.icon-size{
+    padding:0px 5px 0px 0px ;
+}
+.star-mandatory{
+    color: red;
+}

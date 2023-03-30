@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="maintenance">
+        <div class="row">
+            <div class="col-6">
+                <h3>Modify Existing Master Type</h3>
+            </div>
+            <div class="col-6 btn-main" *ngIf="dataSaved">
+
+                <button class="btn-page" id="mastervalue-reset" type="reset"><small class="fa fa-refresh icon-size "
+                        aria-hidden="true"></small>Reset</button>
+                <button class="btn-page" id="mastervalue-save" (click)="onUpdate()"><small
+                        class="fa-solid fa-plus icon-size"></small>Save</button>
+                <button class="btn-page" id="mastervalue-search" type="reset"
+                    routerLink="/master-value-maintenance/master-value-search-view"><small
+                        class="fa fa-search icon-size" aria-hidden="true"></small>search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<form class="form-class" [formGroup]="editForm">
+
+    <div class="container">
+        <div class="row">
+            <label class="label">Master Type :<sup class="star-mandatory">*</sup></label>
+            <div class="col-4">
+                <input type="text" name="name" formControlName="name" class="form-control k-textbox" id="name" />
+
+            </div>
+            <div class="col-8 check-box">
+                <label class="master-check">Disable <input type="checkbox" formControlName="disable" name="disable"
+                        id="disable"></label>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end container ">
+        <button class="mastervalue-addnew" id="mastervalue-addnew" (click)="addNewrow()"><small
+                class="fa-solid fa-plus icon-size"></small>Add New Row</button>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 value-dev">VALUES
+            </div>
+            <div class="col-6 value-dev">
+            </div>
+        </div>
+    </div>
+    <div class="container" *ngIf="dataSaved">
+        <!-- <div class="row" *ngFor="let input of inputData; let i =index">
+            <div class="col-6 value-devinput">
+                <input type="text" class="form-control k-textbox" formControlName="inputData" id="inputData"
+                    name="inputData">
+            </div>
+            <div class="col-6 value-devinput">
+                <button class="btn-page" id="mastervalue-reset" (click)="deleteProduct(i)"><small
+                        class="fa fa-trash icon-size " aria-hidden="true"></small>Delete</button>
+            </div>
+        </div> -->
+        <div class="row" >
+            <div class="col-6 value-devinput">
+                <input type="text" class="form-control k-textbox"  formControlName="inputData" id="inputData" name="inputData">
+            </div>
+            <div class="col-6 value-devinput">
+                <button class="btn-page" id="mastervalue-reset" (click)="deleteProduct()"  ><small
+                        class="fa fa-trash icon-size " aria-hidden="true"></small>Delete</button>
+            </div>
+        </div>
+    </div>
+</form>

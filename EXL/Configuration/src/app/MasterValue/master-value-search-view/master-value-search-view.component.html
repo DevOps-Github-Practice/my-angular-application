@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="maintenance">
+        <div class="row">
+            <div class="col-6">
+                <h3>Search Master Value</h3>
+            </div>
+            <div class="col-6 btn-main">
+                
+                <button class="btn-page" routerLink="/master-value-maintenance" id="mastervalue-save" type="reset" ><small
+                        class="fa-solid fa-plus icon-size" ></small>New</button>
+                <button class="btn-page" id="mastervalue-search" type="reset" (click)="search()"
+                    ><small
+                        class="fa fa-search icon-size"  aria-hidden="true"></small>search</button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <form class="form-class">
+        <div class="row">
+            <label class="label">Master Type Name :<sup class="star-mandatory">*</sup></label>
+            <div class="col-4">
+                <input type="text" name="name" [(ngModel)]="searchQuery"  class="form-control k-textbox" id="name" />
+            </div>
+            
+        </div>
+    </form>
+</div>
+<!-- <ul>
+    <li *ngFor="let item of filteredItems">{{item.name}}</li>
+  </ul> -->
+<hr>
+<!-- <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>VALUES</th>
+          <th>EDIT</th>
+        </tr>
+    </thead>
+    <tbody>
+     
+    </tbody>
+  </table> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 value-dev">MASTER TYPE
+        </div>
+        <div class="col-6 value-dev" >EDIT
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" *ngFor="let post of posts">
+        <!-- <tr *ngFor="let item of filteredItems">
+            <td>{{ item.name }}</td>
+            <td> <button class="btn-page"><small class="fa fa-edit icon-size "
+                aria-hidden="true"></small>Edit</button>
+    </td>
+          </tr> -->
+        <div class="col-6 value-devinput ">
+            <!-- {{ post.name }}     -->
+            <input type="text" class="form-control k-textbox" [(ngModel)]="post.name" id="inputvalue"
+            name="inputvalue"> 
+           </div>
+        <div class="col-6 value-devinput" >
+            <button class="btn-page" id="mastervalue-edit" type="edit" routerLink="/master-value-maintenance/master-edit-maintenance/{{post.id}}"><small class="fa fa-edit icon-size "
+                aria-hidden="true"></small>Edit</button>
+        </div>
+    </div>
+</div>
+

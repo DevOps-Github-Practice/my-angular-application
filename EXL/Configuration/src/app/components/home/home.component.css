@@ -1,0 +1,13 @@
+.img {
+   
+    display: flex; 
+     justify-content: center;
+     
+   
+} 
+.img-sige{
+    width: 300px;
+    height: 260px;
+    margin-top: 150px;
+    
+}
