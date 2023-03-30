@@ -1,0 +1,23 @@
+header{
+  height:55px;
+}
+  .nervehub{
+      display: flex;  
+  }
+  .trademark{
+    font-size: 10px;
+    font-weight:bold;
+    
+}
+  .exlimage{
+      width: 120px;
+      height: 40px;
+}
+.main-user{
+  display: flex;
+  text-align: end;
+ 
+}
+.main-user input{
+  justify-content:space-between;
+}

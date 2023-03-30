@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "",
+      "inputData": "",
+      "disable": false
+    },
+    {
+      "id": 2,
+      "name": "basi",
+      "inputData": "",
+      "disable": true
+    },
+    {
+      "id": 3,
+      "name": "sai123",
+      "inputData": "",
+      "disable": false
+    },
+    {
+      "id": 4,
+      "name": "",
+      "inputData": "",
+      "disable": false
+    },
+    {
+      "id": 5,
+      "name": null,
+      "inputData": null,
+      "disable": null
+    },
+    {
+      "id": 6,
+      "name": "",
+      "inputData": "",
+      "disable": false
+    },
+    {
+      "id": 7,
+      "name": null,
+      "inputData": "",
+      "disable": null
+    },
+    {
+      "id": 8,
+      "name": null,
+      "inputData": "",
+      "disable": null
+    },
+    {
+      "id": 9,
+      "name": "sai",
+      "inputData": "sdf",
+      "disable": true
+    }
+  ]
+}
